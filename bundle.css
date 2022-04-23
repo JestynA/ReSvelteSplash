@@ -1,0 +1,11 @@
+#navBar.svelte-4go2i6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: grey;
+}
+
+#logo.svelte-4go2i6 {
+  border-style: solid;
+  border-color: black;
+}
