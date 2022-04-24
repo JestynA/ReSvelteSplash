@@ -1,4 +1,7 @@
+<script>
 
+    import gitHub from '../../assets/githubTransparent.png'
+</script>
 
 
 <div id='banner'>
@@ -8,16 +11,23 @@
         Svelte application components
     </div>
     <div id='buttonsContainer'>
-        <a href='https://github.com/oslabs-beta/ReSvelte'>
-            <button>
-                Contribute
+        <div>
+            <button >
+                <a href='https://github.com/oslabs-beta/ReSvelte' class='buttons'>
+                        <img src={gitHub}/>
+                        Contribute
+                </a> 
             </button>
-        </a>
-        <a href='https://careers.mcdonalds.com/country'>
+        </div>
+
+        <div>
             <button>
-                Install
+                <a href='https://careers.mcdonalds.com/country' class='buttons'>              
+                        Install               
+                </a>
             </button>
-        </a>
+        </div>
+
     </div>
 
 
@@ -29,10 +39,96 @@
 
 <style lang='scss'>
 
+    $h1Color: rgb(228,63,69);
+    $descColor: rgb(146,145,150);
+    $buttonColor: rgb(205, 205, 205);
+    $buttonBorder: rgb(120, 120, 120);
+
+img{
+    height: 100%;
+    object-fit: contain;
+}
+
 h1{
     font-size: 600%;
     animation: fadeInFromLeft 4s;
     margin-bottom: 20px;
+    color: $h1Color;
+    
+}
+
+button{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: $buttonColor;
+    border-color: $buttonBorder;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+button:hover{
+    filter: brightness(80%);
+}
+
+
+
+
+#buttonsContainer{
+  
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    animation: fadeIn 4s;
+}
+
+#description{
+
+    color: $descColor;
+
+    margin: 0px 0px 20px 0px;
+    animation: fadeIn 4s;
+}
+
+
+
+
+
+#banner{
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    div{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttons{
+        display: flex;
+        height: 30px;
+    }
+
+    a{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: black;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+    
 }
 
 @keyframes fadeInFromLeft{
@@ -52,41 +148,6 @@ h1{
     }
     100%{
         opacity: 1;
-    }
-}
-
-#buttonsContainer{
-    display: flex;
-    gap: 20px;
-    animation: fadeIn 4s;
-    margin-top: 20px;
-}
-
-#description{
-    margin: 0px 0px 20px 0px;
-    animation: fadeIn 4s;
-}
-
-button{
-    width: 15vw;
-    height: 100%
-}
-
-button:hover{
-    filter: brightness(80%)
-}
-
-#banner{
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    div{
-        width: 50%;
-        display: flex;
-        justify-content: center;
     }
 }
 </style>

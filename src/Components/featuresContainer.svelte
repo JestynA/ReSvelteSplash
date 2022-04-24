@@ -46,7 +46,8 @@
 </div>
 
 <style lang='scss'>
-    $descriptionCardColor: gray;
+    $descriptionCardColor: rgb(54,57,63);
+    $fontColor: rgb(219,214,207);
 
     #featuresContainer{
         display: flex;
@@ -58,15 +59,15 @@
 
         #importingDemo{
             opacity: 0;
-            animation: fadeInFromLeft 4s 2s forwards;
+            animation: fadeInFromLeft 4s 1s forwards;
         }
         #componentTreeDemo{
             opacity: 0;
-            animation: fadeInFromRight 4s 3s forwards;
+            animation: fadeInFromRight 4s 2s forwards;
         }
         #performanceMetricsDemo{
             opacity: 0;
-            animation: fadeInFromLeft 4s 4s forwards;
+            animation: fadeInFromLeft 4s 3s forwards;
         }
 
             .feature{
@@ -86,6 +87,7 @@
         background-color: $descriptionCardColor;
         border-radius: 20px;
         border-style: none;
+        color: $fontColor
     }
     }
 

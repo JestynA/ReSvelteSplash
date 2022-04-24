@@ -21,8 +21,10 @@ import logo from '../../assets/ReSvelte.png'
 
 
 <style lang='scss'>
+
 $navbarSize : 50px;
-$navbarColor: grey;
+$navbarColor: rgb(32,34,37);
+$fontColor: rgb(163,166,170);
 
 #navBar{
     display:flex;
@@ -31,8 +33,9 @@ $navbarColor: grey;
     background-color: $navbarColor;
     height: $navbarSize;
    
-
-    width: 100%
+    position: fixed;
+    top: 0; 
+    width: 100%;
     
  
 
@@ -65,6 +68,7 @@ $navbarColor: grey;
         .buttons{
             display: flex;
             align-items: center;
+            color: $fontColor;
         }
     }
 
