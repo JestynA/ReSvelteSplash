@@ -65,20 +65,21 @@
 
         #importingDemo{
             opacity: 0;
-            animation: fadeInFromLeft 4s 1s forwards;
+            animation: fadeInFromLeft 2s 1s forwards;
         }
         #componentTreeDemo{
             opacity: 0;
-            animation: fadeInFromRight 4s 2s forwards;
+            animation: fadeInFromRight 2s 1.5s forwards;
         }
         #performanceMetricsDemo{
             opacity: 0;
-            animation: fadeInFromLeft 4s 3s forwards;
+            animation: fadeInFromLeft 2s 2s forwards;
         }
 
-            .feature{
+        .feature{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 250px;
         align-items: center;
         width: 100%;
     }
@@ -88,8 +89,8 @@
         display: flex;
         align-items: center;
         padding: 0px 20px 0px 20px;
-        width: 35%;
-        height: 50%;
+        width: 15%;
+        height: 65%;
         background-color: $descriptionCardColor;
         border-radius: 20px;
         border-style: none;
