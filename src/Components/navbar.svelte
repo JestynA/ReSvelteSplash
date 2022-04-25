@@ -1,17 +1,22 @@
 <script>
 
 
-import logo from '../../assets/ReSvelte.png'
+import logo from '../../assets/RSonly.png'
 
 </script>
 
 
 <div id='navBar'>
-    <div id='logo'><img src={logo} /></div>
+    <div id='logo'>
+        <a href='#' id='logoButton'>
+          <img src={logo} />  
+        </a>
+        
+    </div>
     <div id='navButtons'>
-        <button><div class='buttons'>Features</div></button>
-        <button><div class='buttons'>Contribute</div></button>
-        <button><div class='buttons'>The Team</div></button>
+        <a href='#featuresContainer'><div class='buttons'>Features</div></a>
+        <a href='https://github.com/oslabs-beta/ReSvelte'><div class='buttons'>Contribute</div></a>
+        <a href='#teamContainer'><div class='buttons'>The Team</div></a>
         
         
 
@@ -44,25 +49,47 @@ $fontColor: rgb(163,166,170);
     }
 
     #logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1.5vw;
         height: 100%;
            img{
-        max-height: 100%;
+        max-height: 80%;
     } 
+        #logoButton{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: $navbarColor;
+            border-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #logoButton:hover{
+            cursor: pointer;
+        }
     }
 
     #navButtons{
         display: flex;
         padding-right: 20px;
         
-        button{
+        a{
             padding-left: 20px;
             padding-right: 20px;
             height: 100%;
+
+            text-decoration: none;
+
             background-color: $navbarColor;
             border-style: none;
         }
 
-        button:hover{
+        a:hover{
             filter: brightness(70%)
         }
         .buttons{

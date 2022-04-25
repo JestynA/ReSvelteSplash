@@ -1,11 +1,13 @@
 <script>
 
     import gitHub from '../../assets/githubTransparent.png'
+    
 </script>
 
 
+
 <div id='banner'>
-    <h1>ReSvelte</h1>
+    <h1><span id='Re'>Re</span><span id='Svelte'>Svelte</span></h1>
     <div id='description'>
         VS Code Extension developer tool for
         Svelte application components
@@ -36,13 +38,19 @@
 
 
 
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
 <style lang='scss'>
 
-    $h1Color: rgb(228,63,69);
-    $descColor: rgb(146,145,150);
-    $buttonColor: rgb(205, 205, 205);
-    $buttonBorder: rgb(120, 120, 120);
+
+
+    $primaryColor: rgb(147,213,232);
+    $secondaryColor: rgb(59,104,195);
+    $fontColor: rgb(163,166,170);
+
+    $buttonColor: rgb(32,34,37);
+    $buttonBorder: rgb(32,34,37);
 
 img{
     height: 100%;
@@ -50,10 +58,19 @@ img{
 }
 
 h1{
+    font-family: 'Kanit', sans-serif;
     font-size: 600%;
+    font-weight: normal;
     animation: fadeInFromLeft 4s;
     margin-bottom: 20px;
-    color: $h1Color;
+    
+    #Re{
+        
+        color: $primaryColor;
+    }
+    #Svelte{
+        color: $secondaryColor;
+    }
     
 }
 
@@ -67,6 +84,8 @@ button{
     border-color: $buttonBorder;
     border-style: solid;
     border-radius: 10px;
+
+
 }
 
 button:hover{
@@ -82,11 +101,12 @@ button:hover{
     gap: 20px;
     justify-content: space-between;
     animation: fadeIn 4s;
+    width: 25%;
 }
 
 #description{
 
-    color: $descColor;
+    color: $fontColor;
 
     margin: 0px 0px 20px 0px;
     animation: fadeIn 4s;
@@ -97,7 +117,6 @@ button:hover{
 
 
 #banner{
-    padding: 100px 0px 100px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +141,9 @@ button:hover{
         align-items: center;
         width: 100%;
         height: 100%;
-        color: black;
+        color: $fontColor;
+        font-weight: bold;
+        text-decoration: none;
     }
     a:hover{
         text-decoration: none;

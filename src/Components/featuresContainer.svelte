@@ -1,6 +1,4 @@
 <script>
-
-    import logo from '../../assets/ReSvelte.png'
     import testGif from '../../assets/frenchieGif.gif'
 </script>
 
@@ -47,6 +45,7 @@
 
 <style lang='scss'>
     $descriptionCardColor: rgb(54,57,63);
+    $backgroundColor: rgb(32,34,37);
     $fontColor: rgb(219,214,207);
 
     #featuresContainer{
@@ -54,8 +53,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 0px 10% 0px 10%;
         gap: 10vh;
+
+
+        margin: 0px 10% 0px 10%;
+        padding: 150px 0px 150px 0px;
+        width: 100%;
+        
+        box-shadow: 0px 0px 20px black;
+        background-color: $backgroundColor;
 
         #importingDemo{
             opacity: 0;
