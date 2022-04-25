@@ -77,8 +77,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: inherit;
     gap: 50px;
-    width: 75%;
+    
+  
   }
 
   h1{
@@ -90,10 +92,10 @@
   display: flex;
   width: 20%;
   justify-content: center;
+  overflow: visible;
   flex-wrap: wrap;
   gap: 4vw;
-  height: 600px;
-  width: 100%;
+  width: 75%;
 }
 
 </style>

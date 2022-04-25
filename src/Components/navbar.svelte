@@ -35,6 +35,7 @@ $fontColor: rgb(163,166,170);
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+
     background-color: $navbarColor;
     height: $navbarSize;
    
@@ -42,6 +43,8 @@ $fontColor: rgb(163,166,170);
     top: 0; 
     width: 100%;
     
+    box-shadow: 0px 0px 10px black;
+    z-index: 9999;
  
 
     div{

@@ -13,18 +13,19 @@
         Svelte application components
     </div>
     <div id='buttonsContainer'>
-        <div>
+        
+        <div id='contributeButton'>
             <button >
-                <a href='https://github.com/oslabs-beta/ReSvelte' class='buttons'>
-                        <img src={gitHub}/>
+                <a href='https://github.com/oslabs-beta/ReSvelte' id='contributeButtonDisplay'>
+                        <img src={gitHub}/>  
                         Contribute
                 </a> 
             </button>
         </div>
 
-        <div>
+        <div id='installButton'>
             <button>
-                <a href='https://careers.mcdonalds.com/country' class='buttons'>              
+                <a href='https://careers.mcdonalds.com/country' >              
                         Install               
                 </a>
             </button>
@@ -53,7 +54,7 @@
     $buttonBorder: rgb(32,34,37);
 
 img{
-    height: 100%;
+    height: 80%;
     object-fit: contain;
 }
 
@@ -61,7 +62,7 @@ h1{
     font-family: 'Kanit', sans-serif;
     font-size: 600%;
     font-weight: normal;
-    animation: fadeInFromLeft 4s;
+    animation: fadeInFromLeft 3s;
     margin-bottom: 20px;
     
     #Re{
@@ -102,13 +103,22 @@ button:hover{
     justify-content: space-between;
     animation: fadeIn 4s;
     width: 25%;
+
+    #contributeButton{
+        width: 10%;
+        height: 50px;
+    }
+
+    #installButton{
+        width: 10%;
+    }
 }
 
 #description{
 
     color: $fontColor;
 
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 50px 0px;
     animation: fadeIn 4s;
 }
 
@@ -122,6 +132,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-bottom: 50px;
+
 
     div{
         width: 50%;
@@ -129,9 +141,11 @@ button:hover{
         justify-content: center;
     }
 
-    .buttons{
+    #contributeButtonDisplay{
         display: flex;
-        height: 30px;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 5px;
     }
 
     a{

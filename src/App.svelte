@@ -3,6 +3,7 @@
 	import Banner from './Components/banner.svelte'
 	import FeaturesContainer from './Components/featuresContainer.svelte'
 	import TeamContainer from './Components/teamContainer.svelte'
+	import Footer from './Components/footer.svelte';
 </script>
 
 <div id='app'>
@@ -10,7 +11,9 @@
 	<Banner/>
 	<FeaturesContainer/>
 	<TeamContainer/>
+	<Footer></Footer>
 </div>
+
 
 
 
