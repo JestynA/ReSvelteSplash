@@ -54,14 +54,6 @@
     gitHubLink='https://github.com/Sateeven'
     linkedInLink='https://www.linkedin.com/in/nguyennsteven'
     />
-
-    <TeamCard
-    name='Kristina Wallen' 
-    picture={kristinaPic} 
-    title='Software Engineer'
-    gitHubLink='https://github.com/kristinawallen'
-    linkedInLink='https://www.linkedin.com/in/kristina-wallen/'
-    />
     
   </div>
 </div>

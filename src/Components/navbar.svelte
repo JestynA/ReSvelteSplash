@@ -27,7 +27,7 @@ import logo from '../../assets/RSonly.png'
 
 <style lang='scss'>
 
-$navbarSize : 50px;
+$navbarSize : 75px;
 $navbarColor: rgb(32,34,37);
 $fontColor: rgb(163,166,170);
 
