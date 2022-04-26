@@ -9,8 +9,9 @@
 <div id='banner'>
     <h1><span id='Re'>Re</span><span id='Svelte'>Svelte</span></h1>
     <div id='description'>
-        VS Code Extension developer tool for
-        Svelte application components
+        <h2>VS Code Extension developer tool for
+        Svelte application components</h2>
+        
     </div>
     <div id='buttonsContainer'>
         
@@ -25,7 +26,7 @@
 
         <div id='installButton'>
             <button>
-                <a href='https://careers.mcdonalds.com/country' >              
+                <a href='https://marketplace.visualstudio.com/items?itemName=ReSvelte.resvelte' >              
                         <h2>Install</h2>               
                 </a>
             </button>

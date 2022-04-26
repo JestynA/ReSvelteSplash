@@ -1,4 +1,8 @@
+<script>
 
+  import githubLogo from '../../assets/githubTransparent.png'
+  import linkedinLogo from '../../assets/linkedInTransparent.png'
+</script>
 
 <div id='footer'>
 
@@ -9,9 +13,9 @@
     
   </div>
   <div class='column'>
-    <h2>Links</h2>
-    <div><a href='https://github.com/oslabs-beta/ReSvelte'>Github</a></div>
-    <div><a href='https://www.linkedin.com/company/resvelte'>LinkedIn</a></div>
+    <h2 id='links'>Links</h2>
+    <div class='picLine'><img src={githubLogo}/><a href='https://github.com/oslabs-beta/ReSvelte'>Github</a></div>
+    <div class='picLine'><img src={linkedinLogo}/><a href='https://www.linkedin.com/company/resvelte'>LinkedIn</a></div>
     
   </div>
 
@@ -37,6 +41,23 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
+      height: 80%;
+
+      
+
+    }
+
+    .picLine{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 50px;
+    }
+
+    img{
+      height: 50%;
+      width: 50%;
+      object-fit: contain;
     }
   }
 
