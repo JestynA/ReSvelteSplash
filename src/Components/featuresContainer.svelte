@@ -1,7 +1,7 @@
 <script>
-    import testGif from '../../assets/frenchieGif.gif'
     import importGif from '../../assets/importGif.gif'
     import treeGif from '../../assets/treeGif.gif'
+    import errorGif from '../../assets/errorGif.gif'
 </script>
 
 
@@ -15,16 +15,18 @@
         </div>
 
         <div id='importDesc' class='featureDesc'>
-            Import your svelte project directly into VS Code so you can 
-            work on you project simultaneously!
+            <h2>Import your svelte project directly into VS Code</h2>
+            <p>Work on your project and use ReSvelte simultaneously</p>
+            
         </div>
     </div>
 
     <div id='componentTreeDemo' class='feature'>
 
         <div id='treeDesc' class='featureDesc'>
-            Visualize your Svelte application as a component tree 
-            to help debug rerendering components.
+            <h2>Visualize your Svelte application</h2>
+            <p>The component tree assists in debugging rerendering components.</p>
+             
         </div>
 
 
@@ -37,10 +39,11 @@
 
     <div id='performanceMetricsDemo' class='feature'>
         <div id='performanceGif'>
-            <img src={testGif} />
+            <img src={errorGif} />
         </div>
         <div id='performanceDesc' class='featureDesc'>
-            Analyze your application using the Performance Metrics.
+            <h2>Analyze your application</h2>
+            <p>App Performance displays live data of your project</p>
         </div>
     </div>
 </div>
@@ -78,6 +81,12 @@
             animation: fadeInFromLeft 2s 2s forwards;
         }
 
+
+        p{
+            font-size: 70%;
+            font-weight: lighter;
+        }
+
         .feature{
         display: flex;
         justify-content: center;
@@ -87,19 +96,20 @@
     }
 
     .featureDesc{
-        display: flex;
-        align-items: center;
-        text-align: center;
+
+        text-align: left;
+
+
+        font-size: 200%;
         
         padding: 0px 20px 0px 20px;
-        width: 15%;
+        width: 20%;
         height: 400px;
 
-        background-color: $descriptionCardColor;
-        border-radius: 50px;
-        border-style: none;
-        box-shadow: 0px 0px 20px rgb(18, 18, 18);
-        color: $fontColor
+        
+        //background-color: $descriptionCardColor;
+
+        color: $fontColor;
     }
     }
 

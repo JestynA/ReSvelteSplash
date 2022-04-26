@@ -18,7 +18,7 @@
             <button >
                 <a href='https://github.com/oslabs-beta/ReSvelte' id='contributeButtonDisplay'>
                         <img src={gitHub}/>  
-                        Contribute
+                        <h2>Contribute</h2>
                 </a> 
             </button>
         </div>
@@ -26,7 +26,7 @@
         <div id='installButton'>
             <button>
                 <a href='https://careers.mcdonalds.com/country' >              
-                        Install               
+                        <h2>Install</h2>               
                 </a>
             </button>
         </div>
@@ -84,7 +84,7 @@ button{
     background-color: $buttonColor;
     border-color: $buttonBorder;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 30px;
 
 
 }
@@ -99,18 +99,19 @@ button:hover{
 #buttonsContainer{
   
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: space-between;
     animation: fadeIn 4s;
     width: 25%;
+    height: 75px;
 
     #contributeButton{
-        width: 10%;
-        height: 50px;
+        width: 20%;
+
     }
 
     #installButton{
-        width: 10%;
+        width: 20%;
     }
 }
 
@@ -133,7 +134,7 @@ button:hover{
     align-items: center;
     width: 100%;
 
-    padding: 100px 0px 100px 0px;
+    padding: 300px 0px 200px 0px;
 
 
     div{
@@ -145,7 +146,8 @@ button:hover{
     #contributeButtonDisplay{
         display: flex;
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 25px;
         padding-right: 5px;
     }
 
