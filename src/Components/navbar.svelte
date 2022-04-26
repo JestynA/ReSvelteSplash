@@ -79,12 +79,16 @@ $fontColor: rgb(163,166,170);
 
     #navButtons{
         display: flex;
+        justify-content: space-around;
         padding-right: 20px;
+        width:15%;
         
         a{
             padding-left: 20px;
             padding-right: 20px;
             height: 100%;
+            font-size: 150%;
+            
 
             text-decoration: none;
 
