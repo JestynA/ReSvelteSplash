@@ -7,11 +7,11 @@
 </script>
 
 <div id='app'>
-		<NavBar/>
+	<NavBar/>
 	<Banner/>
 	<FeaturesContainer/>
 	<TeamContainer/>
-	<Footer></Footer>
+	<Footer/>
 </div>
 
 
@@ -26,8 +26,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 5%;
-	padding-top: $navbarSize + 300px;
+	gap: 2%;
+	padding-top: $navbarSize;
 
 	width: 100%;
 }

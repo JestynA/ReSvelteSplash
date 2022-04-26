@@ -44,7 +44,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
 <style lang='scss'>
 
-
+    $navbarSize: 100px;
 
     $primaryColor: rgb(147,213,232);
     $secondaryColor: rgb(59,104,195);
@@ -60,7 +60,7 @@ img{
 
 h1{
     font-family: 'Kanit', sans-serif;
-    font-size: 600%;
+    font-size: 1000%;
     font-weight: normal;
     animation: fadeInFromLeft 3s;
     margin-bottom: 20px;
@@ -132,7 +132,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 50px;
+
+    padding: 100px 0px 100px 0px;
 
 
     div{
@@ -144,7 +145,7 @@ button:hover{
     #contributeButtonDisplay{
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-right: 5px;
     }
 

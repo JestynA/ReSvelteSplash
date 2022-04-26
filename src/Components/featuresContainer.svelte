@@ -1,5 +1,7 @@
 <script>
     import testGif from '../../assets/frenchieGif.gif'
+    import importGif from '../../assets/importGif.gif'
+    import treeGif from '../../assets/treeGif.gif'
 </script>
 
 
@@ -9,7 +11,7 @@
     <div id='importingDemo' class='feature'>
 
         <div id='importGif'>
-            <img src={testGif} />
+            <img src={importGif} />
         </div>
 
         <div id='importDesc' class='featureDesc'>
@@ -27,7 +29,7 @@
 
 
         <div id='treeGif'>
-            <img src={testGif} />
+            <img src={treeGif} />
         </div>
 
 
@@ -85,15 +87,18 @@
     }
 
     .featureDesc{
-        text-align: center;
         display: flex;
         align-items: center;
+        text-align: center;
+        
         padding: 0px 20px 0px 20px;
         width: 15%;
-        height: 65%;
+        height: 400px;
+
         background-color: $descriptionCardColor;
-        border-radius: 20px;
+        border-radius: 50px;
         border-style: none;
+        box-shadow: 0px 0px 20px rgb(18, 18, 18);
         color: $fontColor
     }
     }

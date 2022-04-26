@@ -13,8 +13,8 @@
 
 <div id='teamCard'>
   <div id='nameTitle'>
-    <h3>{name}</h3>
-    <h4>{title}</h4>
+    <h2>{name}</h2>
+    <h3>{title}</h3>
   </div>
 
   <div id='pic'>
@@ -70,10 +70,12 @@
 #teamCard{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 550px;
   width: 400px;
+
+  transition: 1.5s;
 
   background-color: $cardColor;
   border-radius: 20px;
@@ -81,12 +83,18 @@
 
   box-shadow: 0px 0px 15px rgb(24, 24, 24);
 
-  h3,h4{
+  h2,h3{
     margin: 0;
   }
 
-  h4{
+  h2{
+    font-size: 200%;
     font-weight: normal;
+  }
+
+  h3{
+    
+    font-weight: lighter;
   }
 
 
@@ -108,7 +116,8 @@
   #links{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
     height: 10%;
   }
 
@@ -116,5 +125,16 @@
 
 
 }
+
+#teamCard:hover{
+
+  transform: translateY(-25px);
+}
+
+#teamCard:hover::before{
+
+  transform: translateY(25px);
+}
+
 
 </style> 
