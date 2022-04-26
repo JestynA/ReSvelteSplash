@@ -14,7 +14,7 @@
 <div id='teamCard'>
   <div id='nameTitle'>
     <h2>{name}</h2>
-    <h3>{title}</h3>
+    <h4>{title}</h4>
   </div>
 
   <div id='pic'>
@@ -39,10 +39,13 @@
 
 </div>
 
-<style lang='scss'>
 
+<style lang='scss'>
+  
+  
   $cardColor: rgb(32,34,37);
   $fontColor: rgb(219,214,207);
+
 
   #profilePic{
     height: 80%;
@@ -83,16 +86,16 @@
 
   box-shadow: 0px 0px 15px rgb(24, 24, 24);
 
-  h2,h3{
+  h2,h4{
     margin: 0;
   }
 
   h2{
-    font-size: 200%;
+    font-size: 250%;
     font-weight: normal;
   }
 
-  h3{
+  h4{
     
     font-weight: lighter;
   }

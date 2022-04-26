@@ -3,15 +3,16 @@
 <div id='footer'>
 
   <div class='column'>
-    Contact us <br/>
+    <h2>Contact us</h2>
     <div>Email: <a href='mailto:resvelteadm@gmail.com'>resvelteadm@gmail.com</a></div>
     <div>Phone: <a href='tel:+14255058368'> Call/Text us here!</a></div>
     
   </div>
   <div class='column'>
-    <a>HELLLOOO</a>
-    <a>HELLLOOO</a>
-    <a>HELLLOOO</a>
+    <h2>Links</h2>
+    <div><a href='https://github.com/oslabs-beta/ReSvelte'>Github</a></div>
+    <div><a href='https://www.linkedin.com/company/resvelte'>LinkedIn</a></div>
+    
   </div>
 
 </div>
@@ -34,7 +35,7 @@
     .column{
       display: flex;
       flex-direction: column;
-      align-items:center;
+      align-items: flex-start;
       gap: 20px;
     }
   }

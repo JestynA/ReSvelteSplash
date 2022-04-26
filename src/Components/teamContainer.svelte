@@ -6,7 +6,6 @@
   import jestynPic from '../../assets/teamPics/Jestyn.jpg';
   import martinPic from '../../assets/teamPics/Martin.jpg';
   import stevenPic from '../../assets/teamPics/Steven.jpg';
-  import kristinaPic from '../../assets/teamPics/Kristina.png';
 
 </script>
 
