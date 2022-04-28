@@ -4,13 +4,11 @@
     
 </script>
 
-
-
 <div id='banner'>
     <h1><span id='Re'>Re</span><span id='Svelte'>Svelte</span></h1>
     <div id='description'>
         <h2>VS Code Extension developer tool for
-        Svelte application components</h2>
+        Svelte applications</h2>
         
     </div>
     <div id='buttonsContainer'>
@@ -18,7 +16,6 @@
         <div id='contributeButton'>
             <button >
                 <a href='https://github.com/oslabs-beta/ReSvelte' id='contributeButtonDisplay'>
-                        <img src={gitHub}/>  
                         <h2>Contribute</h2>
                 </a> 
             </button>
@@ -51,7 +48,7 @@
     $secondaryColor: rgb(59,104,195);
     $fontColor: rgb(163,166,170);
 
-    $buttonColor: rgb(32,34,37);
+    $buttonColor: rgb(22,24,27);
     $buttonBorder: rgb(32,34,37);
 
 img{
@@ -81,6 +78,7 @@ button{
     align-items: center;
     height: 100%;
     width: 100%;
+    min-width: fit-content;
     margin: 0;
     background-color: $buttonColor;
     border-color: $buttonBorder;
@@ -100,15 +98,14 @@ button:hover{
 #buttonsContainer{
   
     display: flex;
-    gap: 40px;
-    justify-content: space-between;
+    gap: 10vw;
+    justify-content: center;
     animation: fadeIn 4s;
-    width: 25%;
+
     height: 75px;
 
     #contributeButton{
         width: 20%;
-
     }
 
     #installButton{
@@ -134,8 +131,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-
-    padding: 300px 0px 200px 0px;
+    background: linear-gradient(137deg, rgba(48,51,57,1) 0%, rgba(32,34,37,1) 55%);
+    padding-bottom: 5%;
 
 
     div{
@@ -144,13 +141,7 @@ button:hover{
         justify-content: center;
     }
 
-    #contributeButtonDisplay{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        gap: 25px;
-        padding-right: 5px;
-    }
+
 
     a{
         
@@ -159,6 +150,8 @@ button:hover{
         align-items: center;
         width: 100%;
         height: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
         color: $fontColor;
         font-weight: bold;
         text-decoration: none;
@@ -188,5 +181,11 @@ button:hover{
     100%{
         opacity: 1;
     }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: whitesmoke;
+  }
 }
 </style>

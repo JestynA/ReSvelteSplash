@@ -76,11 +76,11 @@
   justify-content: space-around;
   align-items: center;
   height: 550px;
-  width: 400px;
+  width: 28%;
 
   transition: 1.5s;
 
-  background-color: $cardColor;
+  background: linear-gradient(137deg, rgba(48,51,57,1) 0%, rgba(32,34,37,1) 55%);
   border-radius: 20px;
   padding: 20px 0px 20px 0px;
 
@@ -113,7 +113,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60%;
+    object-fit: contain;
+    height: 55%;
   }
 
   #links{
