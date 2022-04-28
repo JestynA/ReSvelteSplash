@@ -12,9 +12,12 @@
         </div>
     
         <div id='navButtons'>
-            <a href='#featuresContainer'><div class='buttons'>Features</div></a>
-            <a href='https://github.com/oslabs-beta/ReSvelte'><div class='buttons'>Contribute</div></a>
-            <a href='#teamContainer'><div class='buttons'>The Team</div></a>
+        <a href='#featuresContainer'><div class='buttons'>Features</div></a>
+        <a href='https://github.com/oslabs-beta/ReSvelte'><div class='buttons'>Contribute</div></a>
+        <a href='#teamContainer'><div class='buttons'>The Team</div></a>
+            
+            
+            
         </div>
     </div>
     
@@ -71,15 +74,18 @@
             display: flex;
             margin-left: auto;
             justify-content: space-around;
+            width: 30%;
            
             a{
-                padding-right: 3vw;
                 height: 100%;
                 font-size: 150%;
                 text-decoration: none;
                 background-color: $navbarColor;
                 border-style: none;
                 font-size: 1vw;
+                width: 33%;
+                display: flex;
+                justify-content: center;
             }
     
             a:hover{
