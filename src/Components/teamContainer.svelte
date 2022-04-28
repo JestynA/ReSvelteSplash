@@ -70,8 +70,11 @@
     align-items: center;
     flex-grow: inherit;
     gap: 50px;
-    
-  
+
+    background: linear-gradient(51deg, rgba(32,34,37,1) 0%, rgba(47,52,54,1) 100%);
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   h1{
@@ -86,7 +89,7 @@
   overflow: visible;
   flex-wrap: wrap;
   gap: 4vw;
-  width: 75%;
+  width: 85%;
 }
 
 </style>

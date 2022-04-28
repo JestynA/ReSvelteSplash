@@ -15,8 +15,6 @@
 </div>
 
 
-
-
 <style lang='scss'>
 
 	$navbarSize: 50px; 
@@ -26,7 +24,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 2%;
 	padding-top: $navbarSize;
 
 	width: 100%;

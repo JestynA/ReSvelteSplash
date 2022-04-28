@@ -9,7 +9,6 @@
   <div class='column'>
     <h2>Contact us</h2>
     <div>Email: <a href='mailto:resvelteadm@gmail.com'>resvelteadm@gmail.com</a></div>
-    <div>Phone: <a href='tel:+14255058368'> Call/Text us here!</a></div>
     
   </div>
   <div class='column'>
@@ -42,8 +41,6 @@
       align-items: flex-start;
       gap: 20px;
       height: 80%;
-
-      
 
     }
 

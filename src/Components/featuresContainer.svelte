@@ -7,15 +7,14 @@
 
 <div id='featuresContainer'>
 
-
     <div id='importingDemo' class='feature'>
 
-        <div id='importGif'>
-            <img src={importGif} />
+        <div id='importGif' class='gif'>
+            <img src={importGif} alt='importGif'/>
         </div>
 
-        <div id='importDesc' class='featureDesc'>
-            <h2>Import your svelte project directly into VS Code</h2>
+        <div class='featureDesc'>
+            <h2>Import your Svelte project directly into VS Code</h2>
             <p>Work on your project and use ReSvelte simultaneously</p>
             
         </div>
@@ -23,46 +22,54 @@
 
     <div id='componentTreeDemo' class='feature'>
 
-        <div id='treeDesc' class='featureDesc'>
+        <div class='featureDesc'>
             <h2>Visualize your Svelte application</h2>
-            <p>The component tree assists in debugging rerendering components.</p>
+            <p>The component tree assists in debugging rerendering components</p>
              
         </div>
 
-
-        <div id='treeGif'>
-            <img src={treeGif} />
+        <div id='treeGif' class='gif'>
+            <img src={treeGif} alt='treeGif'/>
         </div>
 
 
     </div>
 
     <div id='performanceMetricsDemo' class='feature'>
-        <div id='performanceGif'>
-            <img src={errorGif} />
+        <div id='performanceGif' class='gif'>
+            <img src={errorGif} alt='errorGif'/>
         </div>
-        <div id='performanceDesc' class='featureDesc'>
+        <div class='featureDesc'>
             <h2>Analyze your application</h2>
             <p>App Performance displays live data of your project</p>
         </div>
     </div>
 </div>
 
-<style lang='scss'>
+ <style lang='scss'>
     $descriptionCardColor: rgb(54,57,63);
     $backgroundColor: rgb(32,34,37);
     $fontColor: rgb(219,214,207);
+
+
+    img{
+            //width: 50vw;
+            width: 100%;
+            object-fit: contain;
+        }
 
     #featuresContainer{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 10vh;
+        
+        gap: 100px;
+        padding-top: 150px;
+        padding-bottom: 150px;
 
-
-        margin: 0px 10% 0px 10%;
-        padding: 150px 0px 150px 0px;
+        // margin: 0px 10% 0px 10%;
+        // padding: 150px 0px 150px 0px;
         width: 100%;
         
         box-shadow: 0px 0px 20px black;
@@ -71,14 +78,21 @@
         #importingDemo{
             opacity: 0;
             animation: fadeInFromLeft 2s 1s forwards;
+            width: 90%;
         }
         #componentTreeDemo{
             opacity: 0;
             animation: fadeInFromRight 2s 1.5s forwards;
+            width: 90%;
         }
         #performanceMetricsDemo{
             opacity: 0;
             animation: fadeInFromLeft 2s 2s forwards;
+            width: 90%;
+        }
+
+        .gif{
+            width: 100%;
         }
 
 
@@ -90,7 +104,7 @@
         .feature{
         display: flex;
         justify-content: center;
-        gap: 250px;
+        gap: 5%;
         align-items: center;
         width: 100%;
     }
@@ -98,18 +112,12 @@
     .featureDesc{
 
         text-align: left;
-
-
         font-size: 200%;
-        
         padding: 0px 20px 0px 20px;
-        width: 20%;
-        height: 400px;
-
-        
         //background-color: $descriptionCardColor;
-
         color: $fontColor;
+        width: 100%;
+        
     }
     }
 
@@ -146,4 +154,4 @@
         }
     }
 
-</style>
+</style> 
