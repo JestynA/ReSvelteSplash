@@ -9,6 +9,12 @@
 
 </script>
 
+<style type='text/scss'>
+
+  @import '../styles.scss';
+
+</style>
+
 <div id='teamContainer'>
   <div>
     <h1>The Team</h1>
@@ -61,35 +67,3 @@
 
 
 
-<style lang='scss'>
-
-  $fontColor: rgb(163,166,170);
-  #teamContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: inherit;
-    gap: 50px;
-
-    background: linear-gradient(51deg, rgba(32,34,37,1) 0%, rgba(47,52,54,1) 100%);
-    width: 100%;
-    padding-bottom: 50px;
-    padding-top: 50px;
-  }
-
-  h1{
-    font-size: 300%;
-    color: rgb(163,166,170);
-  }
-
-#cardContainer{
-  display: flex;
-  width: 20%;
-  justify-content: center;
-  overflow: visible;
-  flex-wrap: wrap;
-  gap: 4vw;
-  width: 85%;
-}
-
-</style>

@@ -4,6 +4,8 @@
 	import FeaturesContainer from './Components/featuresContainer.svelte'
 	import TeamContainer from './Components/teamContainer.svelte'
 	import Footer from './Components/footer.svelte';
+
+
 </script>
 
 <div id='app'>
@@ -15,17 +17,6 @@
 </div>
 
 
-<style lang='scss'>
-
-	$navbarSize: 50px; 
-
-#app{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding-top: $navbarSize;
-
-	width: 100%;
-}
+<style type='text/scss'>
+@import './styles.scss';
 </style>

@@ -1,0 +1,631 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,300&display=swap');
+#app{
+  $navbarSize: 50px; 
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: $navbarSize;
+
+	width: 100%;
+
+
+}
+
+#navBar{
+  $navbarSize : 70px;
+  $navbarColor: rgb(32,34,37);
+  $fontColor: rgb(163,166,170);
+
+  display:flex;
+  justify-content: space-between;
+  background-color: $navbarColor;
+  height: $navbarSize;
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  box-shadow: 0px 0px 10px black;
+  z-index: 9999;
+
+  div{
+      height: 100%;
+  }
+
+  #logo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 3vw;
+      height: 100%;
+      font-size: 1vw;
+         img{
+      max-height: 80%;
+  } 
+      #logoButton{
+          display: flex;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          background-color: $navbarColor;
+          border-style: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      #logoButton:hover{
+          cursor: pointer;
+      }
+  }
+
+  #navButtons{
+      display: flex;
+     
+      a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          padding-left: 50px;
+          padding-right: 50px;
+          height: 100%;
+          width: 100%; 
+          text-decoration: none;
+          color: $fontColor;
+          background-color: $navbarColor;
+          border-style: none;
+
+
+
+      }
+
+      a:hover{
+          filter: brightness(70%)
+      }
+      .buttons{
+          display: flex;
+          align-items: center;
+          color: $fontColor;
+      }
+  }
+
+
+}
+
+#banner{
+    $navbarSize: 100px;
+
+    $primaryColor: rgb(147,213,232);
+    $secondaryColor: rgb(59,104,195);
+    $fontColor: rgb(163,166,170);
+
+    $buttonColor: rgb(22,24,27);
+    $buttonBorder: rgb(32,34,37);
+
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(137deg, rgba(48,51,57,1) 0%, rgba(32,34,37,1) 55%);
+    padding-bottom: 5%;
+
+
+    img{
+    height: 80%;
+    object-fit: contain;
+    }
+
+    h1{
+        font-family: 'Kanit', sans-serif;
+        font-size: 1000%;
+        font-weight: normal;
+        animation: fadeInFromLeft 3s;
+        margin-bottom: 20px;
+        
+        #Re{
+            
+            color: $primaryColor;
+        }
+        #Svelte{
+            color: $secondaryColor;
+        }
+        
+    }
+
+    button{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        min-width: fit-content;
+        margin: 0;
+        background-color: $buttonColor;
+        border-color: $buttonBorder;
+        border-style: solid;
+        border-radius: 30px;
+
+
+    }
+
+    button:hover{
+        filter: brightness(80%);
+    }
+    
+    div{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    a{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: $fontColor;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+    #buttonsContainer{
+  
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    animation: fadeIn 4s;
+
+    height: 75px;
+
+    #contributeButton{
+        width: 20%;
+    }
+
+    #installButton{
+        width: 20%;
+    }
+    }
+
+    #description{
+
+    color: $fontColor;
+
+    margin: 0px 0px 50px 0px;
+    animation: fadeIn 4s;
+    }
+
+    @keyframes fadeInFromLeft{
+        0%{
+            opacity: 0;
+            transform: translateX(-150px);
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+    body {
+        background-color: whitesmoke;
+    }
+    }
+    
+}
+
+#featuresContainer{
+  $descriptionCardColor: rgb(54,57,63);
+  $backgroundColor: rgb(32,34,37);
+  $fontColor: rgb(219,214,207);
+
+
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  // margin: 0px 10% 0px 10%;
+  // padding: 150px 0px 150px 0px;
+  width: 100%;
+  
+  box-shadow: 0px 0px 20px black;
+  background-color: $backgroundColor;
+
+  img{
+      //width: 50vw;
+      width: 100%;
+      object-fit: contain;
+  }
+
+  #importingDemo{
+      opacity: 0;
+      animation: fadeInFromLeft 2s 1s forwards;
+      width: 90%;
+  }
+  #componentTreeDemo{
+      opacity: 0;
+      animation: fadeInFromRight 2s 1.5s forwards;
+      width: 90%;
+  }
+  #performanceMetricsDemo{
+      opacity: 0;
+      animation: fadeInFromLeft 2s 2s forwards;
+      width: 90%;
+  }
+
+  .gif{
+      width: 100%;
+  }
+
+
+  p{
+      font-size: 70%;
+      font-weight: lighter;
+  }
+
+  .feature{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+  width: 100%;
+  }
+
+  .featureDesc{
+
+      text-align: left;
+      font-size: 200%;
+      padding: 0px 20px 0px 20px;
+      //background-color: $descriptionCardColor;
+      color: $fontColor;
+      width: 100%;
+      
+  }
+  @keyframes fadeInFromLeft{
+  0%{
+      opacity: 0;
+      transform: translateX(-500px);
+  }
+
+  30%{
+      opacity: .2;
+  }
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+  }
+
+  @keyframes fadeInFromRight{
+      0%{
+          opacity: 0;
+          transform: translateX(500px);
+      }
+
+      30%{
+          opacity: .2;
+      }
+
+      100%{
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+}
+
+#teamContainer{
+  $fontColor: rgb(163,166,170);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: inherit;
+  gap: 50px;
+
+  background: linear-gradient(51deg, rgba(32,34,37,1) 0%, rgba(48,51,57,1) 100%);
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  h1{
+    font-size: 300%;
+    color: rgb(163,166,170);
+  }
+
+  #cardContainer{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    overflow: visible;
+    flex-wrap: wrap;
+    gap: 4vw;
+    width: 85%;
+  }
+
+}
+
+#teamCard{
+
+  $cardColor: rgb(32,34,37);
+  $fontColor: rgb(219,214,207);
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 550px;
+  width: 28%;
+
+  transition: 1.5s;
+
+  background: linear-gradient(137deg, rgba(48,51,57,1) 0%, rgba(32,34,37,1) 55%);
+  border-radius: 20px;
+  padding: 20px 0px 20px 0px;
+
+  box-shadow: 0px 0px 15px rgb(24, 24, 24);
+
+  h2,h4{
+    margin: 0;
+  }
+
+  h2{
+    font-size: 250%;
+    font-weight: normal;
+  }
+
+  h4{
+    
+    font-weight: lighter;
+  }
+
+  a{
+    height: 100%;
+    width: 100%;
+  
+  }
+
+
+  .logos{
+    height: 70px;
+    width: 70px;
+    
+    object-fit: contain;
+  }
+
+    #profilePic{
+      height: 80%;
+      object-fit: contain;
+
+      border-radius: 50%;
+      border-style: sold;
+      border-color: black;
+    
+    }
+
+
+  #nameTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $fontColor;
+    height: 10%;
+  }
+
+  #pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    height: 55%;
+  }
+
+  #links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 10%;
+  }
+
+  #teamCard:hover{
+
+    transform: translateY(-25px);
+  }
+
+  #teamCard:hover::before{
+
+    transform: translateY(25px);
+  }
+
+
+
+}
+
+#footer{
+  $navbarColor: rgb(32,34,37);
+  $fontColor: rgb(163,166,170);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $navbarColor;
+  padding: 10px 0px 100px 0px;
+  width: 100%;
+  box-shadow: 0px 0px 10px black;
+  color: $fontColor;
+
+  .column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    height: 80%;
+
+  }
+
+  .picLine{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+  }
+
+  img{
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+  }
+  a{
+  color: $fontColor;
+  }
+}
+
+@media screen and (max-width:900px) {
+
+  #app{
+    max-width:100% ;
+  }
+  
+  #navBar{
+    width: 100%;
+    
+
+    display: flex;
+    justify-content: space-between ;
+
+    .buttons{
+
+      display: flex;
+      justify-content: center;
+
+      text-align: center;
+    }
+
+  
+
+    #logo{
+      padding-left: 10px;
+    }
+
+    #navButtons{
+      padding: 0;
+      display: flex;
+      gap: 15%;
+      padding-right: 15%;
+
+      a{
+          display: flex;
+          justify-content: center;
+          padding-left: 0;
+          padding-right: 0;
+        }
+    }
+  }
+
+
+  #banner{
+    
+    #description{
+      font-size: 80%;
+      font-weight: light;
+    }
+
+    #buttonsContainer{
+      justify-content: space-between;
+    }
+    h1{
+      font-size: 500%;
+    }
+  }
+
+  #featuresContainer{
+    .feature{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #componentTreeDemo{
+      flex-direction: column-reverse;
+    }
+  }
+
+  #teamCard{
+    height: 200px;
+    width: 150px;
+
+    #nameTitle{
+      h2{
+        font-size:80%;
+      }
+      h4{
+        font-size: 60%;
+      }
+    }
+
+    #links{
+      justify-content: center;
+      gap: 20%;
+    }
+
+    .logos{
+      height: 200%;
+      width: 100%;
+      object-fit: contain;
+    }
+
+
+    img{
+      width: 100%; 
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+
+  #footer{
+    width: 100%;
+    .column{
+      align-items: center;
+    }
+
+    #linksColumn{
+      align-items: center;
+      gap: 0;
+      width: 50%;
+      .picLine{
+        width:auto
+      }
+    }
+  }
+}
