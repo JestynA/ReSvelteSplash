@@ -1,7 +1,5 @@
 <script>
-
     import logo from '../../assets/RSonly.png'
-
 </script>
 
 <style type='text/scss'>
@@ -21,12 +19,6 @@
             <div class='buttons'><a href='#featuresContainer'>Features</a></div>
             <div class='buttons'><a href='https://github.com/oslabs-beta/ReSvelte'>Contribute</a></div>
             <div class='buttons'><a href='#teamContainer'>The Team</a></div>
-        
-        
-        
-            
-            
-            
         </div>
     </div>
     
