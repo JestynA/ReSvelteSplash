@@ -1,6 +1,9 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,300&display=swap');
+
+
+
+
 #app{
   $navbarSize: 50px; 
 
@@ -82,13 +85,21 @@
 
       }
 
-      a:hover{
-          filter: brightness(70%)
-      }
+  
       .buttons{
           display: flex;
           align-items: center;
           color: $fontColor;
+
+          
+      }
+
+      a{
+        transition: all .25s ease-in-out;
+      }
+      a:hover{
+          background-color: rgb(26, 26, 26);
+          font-size: 115%;
       }
   }
 
@@ -103,7 +114,7 @@
     $fontColor: rgb(163,166,170);
 
     $buttonColor: rgb(22,24,27);
-    $buttonBorder: rgb(32,34,37);
+ 
 
 
 
@@ -147,16 +158,14 @@
         min-width: fit-content;
         margin: 0;
         background-color: $buttonColor;
-        border-color: $buttonBorder;
         border-style: solid;
-        border-radius: 30px;
+        border-radius: 20px;
 
+        font-family: 'Kanit',sans-serif;
 
+        transition: all .25s ease-in-out;
     }
 
-    button:hover{
-        filter: brightness(80%);
-    }
     
     div{
         width: 50%;
@@ -185,21 +194,61 @@
 
     #buttonsContainer{
   
-    display: flex;
-    gap: 10vw;
-    justify-content: center;
-    animation: fadeIn 4s;
+      display: flex;
+      gap: 5vw;
+      justify-content: center;
+      animation: fadeIn 4s;
 
-    height: 75px;
+      height: 75px;
 
-    #contributeButton{
-        width: 20%;
-    }
+      #contributeContainer{
+          width: 20%;
+          
+          #contributeButton{
+            background: $buttonColor;
 
-    #installButton{
-        width: 20%;
-    }
-    }
+            border-style: none;
+            box-shadow: 0 3px 10px $buttonColor;
+
+          }
+
+          #contributeButton:hover{
+            box-shadow: 0 6px 15px $buttonColor;
+            font-size: 95%;
+          }
+      }
+
+      #installContainer{
+          width: 20%;
+          #installButton{
+            background: rgb(147,213,232);
+            background: linear-gradient(322deg, rgba(147,213,232,1) 0%, rgba(59,104,195,1) 100%);
+            
+            border-style: none;
+            box-shadow: 0 3px 10px rgb(147,213,232);
+    
+    
+            
+    
+          }
+    
+          #installButton:hover{
+            box-shadow: 0 6px 15px rgb(147,213,232);
+            font-size: 95%;
+           
+          }
+    
+    
+          #installText{
+            color: white;
+          }
+
+
+          }
+      }
+
+
+    
 
     #description{
 
@@ -228,22 +277,14 @@
             opacity: 1;
         }
     }
+  
+  }
 
-    @media only screen and (max-width: 600px) {
-    body {
-        background-color: whitesmoke;
-    }
-    }
-    
-}
 
 #featuresContainer{
   $descriptionCardColor: rgb(54,57,63);
   $backgroundColor: rgb(32,34,37);
   $fontColor: rgb(219,214,207);
-
-
-
 
   display: flex;
   flex-direction: column;
@@ -254,17 +295,21 @@
   padding-top: 150px;
   padding-bottom: 150px;
 
-  // margin: 0px 10% 0px 10%;
-  // padding: 150px 0px 150px 0px;
   width: 100%;
+
+  z-index: 9998;
   
-  box-shadow: 0px 0px 20px black;
+  box-shadow: 0 0 5px 5px rgb(23, 23, 23);
   background-color: $backgroundColor;
 
   img{
       //width: 50vw;
       width: 100%;
       object-fit: contain;
+  }
+  p{
+    font-size: 70%;
+    font-weight: lighter;
   }
 
   #importingDemo{
@@ -283,16 +328,10 @@
       width: 90%;
   }
 
+
   .gif{
       width: 100%;
   }
-
-
-  p{
-      font-size: 70%;
-      font-weight: lighter;
-  }
-
   .feature{
   display: flex;
   justify-content: center;
@@ -300,7 +339,6 @@
   align-items: center;
   width: 100%;
   }
-
   .featureDesc{
 
       text-align: left;
@@ -311,35 +349,35 @@
       width: 100%;
       
   }
+
   @keyframes fadeInFromLeft{
-  0%{
-      opacity: 0;
-      transform: translateX(-500px);
-  }
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
 
-  30%{
-      opacity: .2;
+    30%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
   }
-  100%{
-      opacity: 1;
-      transform: translateX(0);
-  }
-  }
-
   @keyframes fadeInFromRight{
-      0%{
-          opacity: 0;
-          transform: translateX(500px);
-      }
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
 
-      30%{
-          opacity: .2;
-      }
+    30%{
+        opacity: .2;
+    }
 
-      100%{
-          opacity: 1;
-          transform: translateX(0);
-      }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
   }
 }
 
@@ -393,7 +431,7 @@
   border-radius: 20px;
   padding: 20px 0px 20px 0px;
 
-  box-shadow: 0px 0px 15px rgb(24, 24, 24);
+  box-shadow: 0 0 4px 4px rgb(24, 24, 24);
 
   h2,h4{
     margin: 0;
@@ -458,18 +496,18 @@
     height: 10%;
   }
 
-  #teamCard:hover{
-
-    transform: translateY(-25px);
-  }
-
-  #teamCard:hover::before{
-
-    transform: translateY(25px);
-  }
 
 
 
+
+}
+#teamCard:hover{
+
+  transform: translateY(-25px);
+}
+#teamCard:hover::before{
+
+  transform: translateY(25px);
 }
 
 #footer{
@@ -517,48 +555,17 @@
     max-width:100% ;
   }
   
-  #navBar{
-    width: 100%;
-    
 
-    display: flex;
-    justify-content: space-between ;
-
-    .buttons{
-
-      display: flex;
-      justify-content: center;
-
-      text-align: center;
-    }
-
-  
-
-    #logo{
-      padding-left: 10px;
-    }
-
-    #navButtons{
-      padding: 0;
-      display: flex;
-      gap: 15%;
-      padding-right: 15%;
-
-      a{
-          display: flex;
-          justify-content: center;
-          padding-left: 0;
-          padding-right: 0;
-        }
-    }
-  }
 
 
   #banner{
+
+    padding-bottom: 100px;
     
     #description{
       font-size: 80%;
       font-weight: light;
+      
     }
 
     #buttonsContainer{
@@ -570,13 +577,32 @@
   }
 
   #featuresContainer{
+    padding: 0;
+    z-index: inherit;
+
+    h2{
+      font-size: 80%;
+    }
+
+    p{
+      font-size: 60%;
+    }
+    justify-content: center;
     .feature{
       display: flex;
       flex-direction: column;
+      padding-bottom: 100px;
+      
+    }
+
+    #importingDemo{
+      padding-top: 100px;
+      padding-bottom: 0;
     }
 
     #componentTreeDemo{
       flex-direction: column-reverse;
+      padding-bottom: 0;
     }
   }
 
@@ -606,10 +632,15 @@
 
 
     img{
-      width: 100%; 
-      height: 100%;
+
       border-radius: 50%;
     }
+  }
+
+  #cardContainer{
+    display: flex;
+    justify-content: space-around !important;
+
   }
 
 
@@ -626,6 +657,43 @@
       .picLine{
         width:auto
       }
+    }
+  }
+
+    #navBar{
+    width: 100%;
+    
+
+    display: flex;
+    justify-content: space-between ;
+
+    .buttons{
+
+      display: flex;
+      justify-content: center;
+
+      text-align: center;
+    }
+
+  
+
+    #logo{
+      padding-left: 10px;
+    }
+
+    #navButtons{
+      padding: 0;
+      display: flex;
+      width: 80%;
+      justify-content: space-around;
+  
+
+      a{
+          display: flex;
+          justify-content: center;
+          padding-left: 0;
+          padding-right: 0;
+        }
     }
   }
 }

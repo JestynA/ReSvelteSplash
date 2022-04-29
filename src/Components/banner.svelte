@@ -7,17 +7,17 @@
     </div>
     <div id='buttonsContainer'>
         
-        <div id='contributeButton'>
-            <button >
+        <div id='contributeContainer'>
+            <button id='contributeButton'>
                 <a href='https://github.com/oslabs-beta/ReSvelte' id='contributeButtonDisplay'>
                         <h2>Contribute</h2>
                 </a> 
             </button>
         </div>
 
-        <div id='installButton'>
-            <button>
-                <a href='https://marketplace.visualstudio.com/items?itemName=ReSvelte.resvelte' >              
+        <div id='installContainer'>
+            <button id='installButton'>
+                <a href='https://marketplace.visualstudio.com/items?itemName=ReSvelte.resvelte' id='installText'>              
                         <h2>Install</h2>               
                 </a>
             </button>
